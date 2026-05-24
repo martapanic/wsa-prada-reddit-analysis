@@ -1,0 +1,17 @@
+query,posts,authors,median_likes,mean_likes,total_replies
+"""the devil wears prada 2""",1000,735,0.0,5.14,462
+"""miranda priestly""",470,377,0.5,5.56,166
+"""anne hathaway"" prada",453,362,0.0,7.0,239
+"""lady gaga"" prada",437,263,0.0,5.42,104
+"""stanley tucci"" prada",261,187,0.0,9.4,125
+#devilwearsprada2,240,179,0.5,2.63,39
+"""dwp2""",194,170,1.0,6.04,105
+"""anna wintour"" prada",183,146,0.0,3.16,59
+"""emily blunt"" prada",171,137,0.0,8.06,75
+"""meryl streep"" prada",135,106,0.0,3.61,37
+"""devil wears prada sequel""",97,85,0.0,2.61,35
+"""devil wears prada"" 2026",87,71,1.0,5.22,30
+"""doechii"" prada",63,57,1.0,9.44,25
+"""prada 2"" movie",53,53,1.0,5.77,44
+"""prada sequel""",19,19,1.0,2.74,6
+#dwp2,4,3,0.0,0.0,0
