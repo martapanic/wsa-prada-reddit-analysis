@@ -15,7 +15,7 @@
 
 ## Research question
 
-> How did Bluesky users engage with the release of *The Devil Wears Prada 2*, and how do discussion communities, sentiment and dominant themes differ across the film, fashion, celebrity‑culture and box‑office audiences?
+> > How did Bluesky users engage with the release of *The Devil Wears Prada 2*, and how do discussion communities, sentiment and dominant themes differ across film-, fashion-, celebrity-culture- and box-office-related narratives?
 
 The question is articulated into four sub‑questions:
 
@@ -126,7 +126,7 @@ Four community detection algorithms representing distinct families are compared 
 
 Posts and replies are combined into a single corpus and standardised. Sentiment, emotion and NER are run on the **English sub‑corpus only**, because the lexicons and models used (VADER, AFINN, NRCLex, SpaCy `en_core_web_sm`) are English‑only and would silently score other languages as neutral.
 
-Preprocessing produces lower‑cased text without URLs, mentions or punctuation, NLTK‑tokenised, with NLTK English stopwords plus a project‑specific list of collection keywords removed, and lemmatised with WordNet.
+Preprocessing produces lower-cased text without URLs, mentions or punctuation. Tokens are obtained from the cleaned text, English stopwords and project-specific collection keywords are removed, and words are lemmatised with WordNet.
 
 **Sentiment** uses VADER (`compound` score, ±0.05 thresholds for the discrete label) cross‑checked with AFINN. **Emotion** uses the eight basic emotions of NRCLex (Plutchik wheel). **NER** uses SpaCy `en_core_web_sm` on the *original* text (not the cleaned version, because aggressive cleaning destroys the case and punctuation cues SpaCy needs) and keeps the labels `PERSON`, `ORG`, `GPE`, `LOC`, `WORK_OF_ART`, `EVENT`, `DATE`.
 
@@ -138,9 +138,9 @@ The final cross‑analysis joins community membership with sentiment, emotion an
 
 - The Bluesky conversation about *The Devil Wears Prada 2* is **event‑driven and post‑release**. Daily volume is negligible before 15 April 2026 and rises sharply after 1 May; about 88 % of the corpus is post‑release.
 - The reply network is **highly fragmented**: 1 555 authors form 371 disconnected components, the largest of which contains only 5.7 % of nodes. The conversation is a constellation of small reply trees around individual viral posts rather than a single sustained debate.
-- Three of the four community detection algorithms (Louvain, Greedy Modularity, Girvan–Newman) converge on essentially the same 10–11 community partition with modularity around 0.42 (pairwise ARI ≥ 0.96). FluidC produces a different, coarser partition (ARI ≈ 0.45). The convergence among modularity‑optimising methods of different families suggests that the giant component has a well‑defined modular structure.
+- Three of the four community detection algorithms (Louvain, Greedy Modularity, Girvan–Newman) converge on essentially the same 10–11 community partition with modularity around 0.42 (pairwise ARI ≥ 0.96). FluidC produces a different, coarser partition (ARI ≈ 0.45).The convergence between Louvain, Greedy Modularity and Girvan–Newman suggests that the giant component has a stable modular structure under different community-detection strategies.
 - Sentiment is **polarised rather than uniformly positive**: about 43 % negative, 38 % positive, 19 % neutral (VADER ± 0.05). The NRCLex emotion profile is led by *anticipation* and *trust*, consistent with a release‑window discussion.
-- Communities show distinct affective and topical profiles, which is what makes the cross‑analysis informative — though community‑level findings concern only the ~110 texts (≈ 3 %) whose authors belong to the giant component.
+- Communities show distinct affective and topical profiles, which is what makes the cross‑analysis informative. Within the giant component, communities show distinct affective and topical profiles. These community-level findings concern only about 110 texts, corresponding to roughly 2% of the full corpus and about 2.6% of the English sub-corpus.
 
 The full quantitative breakdown is in the final markdown cells of notebooks 02 and 03, in the figures under `data/figures/`, and in the project report.
 
@@ -169,7 +169,7 @@ The full quantitative breakdown is in the final markdown cells of notebooks 02 a
 
 - **Window.** The analysis covers 1 April – 21 May 2026. Discussion after 21 May is not included.
 - **Language.** Sentiment, emotion and NER are computed on the English‑tagged sub‑corpus only (about 70 % of the texts). Portuguese, Spanish and French posts are described in aggregate but not analysed with their own pipelines.
-- **Community coverage.** Louvain communities are defined only on the 88 authors of the giant component. Roughly 97 % of the texts are written by authors outside the giant component and therefore do not carry a community label.
+- **Community coverage.** Louvain communities are defined only on the 88 authors of the giant component. As a result, community-level content analysis covers about 110 English texts, while the majority of the corpus is analysed only at the global level.
 - **NER model.** `en_core_web_sm` is the small SpaCy model: it sometimes mislabels hashtags or short tokens (e.g. `ai`, `tucci`, `devilwearsprada2`) as locations. The errors do not affect the dominant ranks but should be acknowledged when reading individual entries of the entity tables.
 - **Promotional accounts.** A small number of accounts (e.g. `@ourmovieguide`) repost template content. They are flagged with `is_likely_promo` and kept in the network for transparency rather than silently filtered out.
 
