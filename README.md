@@ -141,7 +141,7 @@ The final cross‑analysis joins community membership with sentiment, emotion an
 - The reply network is **highly fragmented**: 1 555 authors form 371 disconnected components, the largest of which contains only 5.7 % of nodes. The conversation is a constellation of small reply trees around individual viral posts rather than a single sustained debate.
 - Three of the four community detection algorithms (Louvain, Greedy Modularity, Girvan–Newman) converge on essentially the same 10–11 community partition with modularity around 0.42 (pairwise ARI ≥ 0.96). FluidC produces a different, coarser partition (ARI ≈ 0.45). The convergence between Louvain, Greedy Modularity and Girvan–Newman suggests that the giant component has a stable modular structure under different community-detection strategies.
 - Sentiment is **polarised rather than uniformly positive**: about 43 % negative, 38 % positive, 19 % neutral (VADER ± 0.05). The NRCLex emotion profile is led by *anticipation* and *trust*, consistent with a release‑window discussion.
-- - Within the giant component, communities show distinct affective and topical profiles, which is what makes the cross-analysis informative. These community-level findings concern only about 110 texts, corresponding to roughly 2% of the full corpus and about 2.6% of the English sub-corpus.
+- Within the giant component, communities show distinct affective and topical profiles, which is what makes the cross-analysis informative. These community-level findings concern only about 110 texts, corresponding to roughly 2% of the full corpus and about 2.6% of the English sub-corpus.
 
 The full quantitative breakdown is in the final markdown cells of notebooks 02 and 03, in the figures under `data/figures/`, and in the project report.
 
