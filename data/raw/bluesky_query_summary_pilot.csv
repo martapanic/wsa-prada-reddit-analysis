@@ -1,0 +1,13 @@
+query,n_posts,unique_authors,total_replies,avg_replies,total_likes,avg_likes
+"""anna wintour"" prada",97,88,47,0.48,407,4.2
+"""doechii"" prada",95,82,18,0.19,220,2.32
+#devilwearsprada2,95,86,23,0.24,234,2.46
+"""miranda priestly""",92,88,41,0.45,519,5.64
+"""lady gaga"" prada",91,74,29,0.32,486,5.34
+"""stanley tucci"" prada",85,78,58,0.68,1128,13.27
+"""anne hathaway"" prada",75,72,106,1.41,1405,18.73
+"""emily blunt"" prada",72,64,36,0.5,376,5.22
+"""meryl streep"" prada",71,65,21,0.3,161,2.27
+"""the devil wears prada""",60,54,8,0.13,107,1.78
+"""the devil wears prada 2""",53,45,44,0.83,565,10.66
+"""devil wears prada 2""",51,50,21,0.41,99,1.94
