@@ -1,5 +1,5 @@
 algorithm,n_communities,modularity,largest_comm,smallest_comm,median_comm_size
 Louvain,10,0.4199,50,2,3
 Greedy,10,0.4199,50,2,3
-FluidC,7,0.2531,32,2,8
+FluidC,7,0.3038,36,1,6
 Girvan-Newman,11,0.4112,50,2,2
