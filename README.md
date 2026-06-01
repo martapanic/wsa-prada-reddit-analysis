@@ -144,8 +144,6 @@ The final cross‑analysis joins community membership with sentiment, emotion an
 - Within the giant component, communities show distinct affective and topical profiles, which is what makes the cross-analysis informative. These community-level findings concern only about 111 English texts, corresponding to roughly 2.6% of the English sub-corpus and about 2% of the full corpus.
 
 
-
-
 The full quantitative breakdown is in the final markdown cells of notebooks 02 and 03, in the figures under `data/figures/`, and in the project report.
 
 ---
