@@ -137,7 +137,7 @@ The final cross‑analysis joins community membership with sentiment, emotion an
 
 ## Key findings
 
-- The Bluesky conversation about *The Devil Wears Prada 2* is **event‑driven and post‑release**. Daily volume is negligible before mid-April 2026 and rises sharply after 1 May; about 88 % of the corpus is post‑release.
+- The Bluesky conversation about *The Devil Wears Prada 2* is **event‑driven and post‑release**. Daily volume is negligible before mid-April 2026 and rises sharply after 1 May; about 77.6 % of the corpus is post‑release.
 - The reply network is **highly fragmented**: 1 554 authors form 371 disconnected components, the largest of which contains only 5.7 % of nodes. The conversation is a constellation of small reply trees around individual viral posts rather than a single sustained debate.
 - Three of the four community detection algorithms (Louvain, Greedy Modularity, Girvan–Newman) converge on essentially the same 10–11 community partition with modularity around 0.42 (pairwise ARI ≥ 0.96). FluidC produces a different, coarser partition (ARI ≈ 0.15). The convergence between Louvain, Greedy Modularity and Girvan–Newman suggests that the giant component has a stable modular structure under different community-detection strategies.
 - Sentiment is **polarised rather than uniformly positive**: about 43 % negative, 38 % positive, 19 % neutral (VADER ± 0.05). The NRCLex emotion profile is led by *anticipation* and *trust*, consistent with a release‑window discussion.
