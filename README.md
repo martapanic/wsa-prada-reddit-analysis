@@ -119,7 +119,7 @@ Collection uses cursor‑based pagination with `sort="latest"`, server‑side `s
 
 The reply network is built on author handles: an edge connects the author of a reply to the author of the post being replied to. Self‑loops (chained self‑replies, which on Bluesky usually correspond to long thread‑style posts split across consecutive bubbles by the same author) are removed because the unit of analysis is the interaction *between* users; the affected authors are flagged with `is_likely_promo` for later interpretation but kept in the graph.
 
-Two graphs are constructed from the same edge list: a **directed** graph used for in‑degree and out‑degree centrality, and an **undirected weighted** graph used for closeness, betweenness, eigenvector centrality and community detection.
+Two graphs are constructed from the same edge list: a directed graph used for in‑degree and out‑degree centrality, and an undirected weighted graph used for eigenvector centrality and community detection. Betweenness and closeness centrality are also computed on the undirected graph, but using a distance attribute defined as 1 / weight rather than weight directly: since edge weight represents tie strength (number of reply interactions), using it as a path cost would invert the intended semantics by treating frequently-interacting pairs as farther apart. Before computing betweenness and closeness, a URI-level duplicate check is also performed to verify that no reply appears in both the thread-expansion and search-collected sources; if duplicates are found, they are removed before building the edge list.
 
 Four community detection algorithms representing distinct families are compared on the giant component: **Louvain** (modularity‑maximising, baseline), **Greedy Modularity** (agglomerative), **Asynchronous Fluid Communities** (propagation‑based, requires `k`), and **Girvan–Newman** (divisive, applied only to the giant component for computational cost). Their partitions are compared with modularity, Adjusted Rand Index and Normalised Mutual Information. The **Louvain** partition is taken as the reference for the downstream content analysis.
 
@@ -137,11 +137,14 @@ The final cross‑analysis joins community membership with sentiment, emotion an
 
 ## Key findings
 
-- The Bluesky conversation about *The Devil Wears Prada 2* is **event‑driven and post‑release**. Daily volume is negligible before 15 April 2026 and rises sharply after 1 May; about 88 % of the corpus is post‑release.
-- The reply network is **highly fragmented**: 1 555 authors form 371 disconnected components, the largest of which contains only 5.7 % of nodes. The conversation is a constellation of small reply trees around individual viral posts rather than a single sustained debate.
-- Three of the four community detection algorithms (Louvain, Greedy Modularity, Girvan–Newman) converge on essentially the same 10–11 community partition with modularity around 0.42 (pairwise ARI ≥ 0.96). FluidC produces a different, coarser partition (ARI ≈ 0.45). The convergence between Louvain, Greedy Modularity and Girvan–Newman suggests that the giant component has a stable modular structure under different community-detection strategies.
+- The Bluesky conversation about *The Devil Wears Prada 2* is **event‑driven and post‑release**. Daily volume is negligible before mid-April 2026 and rises sharply after 1 May; about 88 % of the corpus is post‑release.
+- The reply network is **highly fragmented**: 1 554 authors form 371 disconnected components, the largest of which contains only 5.7 % of nodes. The conversation is a constellation of small reply trees around individual viral posts rather than a single sustained debate.
+- Three of the four community detection algorithms (Louvain, Greedy Modularity, Girvan–Newman) converge on essentially the same 10–11 community partition with modularity around 0.42 (pairwise ARI ≥ 0.96). FluidC produces a different, coarser partition (ARI ≈ 0.15). The convergence between Louvain, Greedy Modularity and Girvan–Newman suggests that the giant component has a stable modular structure under different community-detection strategies.
 - Sentiment is **polarised rather than uniformly positive**: about 43 % negative, 38 % positive, 19 % neutral (VADER ± 0.05). The NRCLex emotion profile is led by *anticipation* and *trust*, consistent with a release‑window discussion.
-- - Within the giant component, communities show distinct affective and topical profiles, which is what makes the cross-analysis informative. These community-level findings concern only about 110 texts, corresponding to roughly 2% of the full corpus and about 2.6% of the English sub-corpus.
+- Within the giant component, communities show distinct affective and topical profiles, which is what makes the cross-analysis informative. These community-level findings concern only about 111 English texts, corresponding to roughly 2.6% of the English sub-corpus and about 2% of the full corpus.
+
+
+
 
 The full quantitative breakdown is in the final markdown cells of notebooks 02 and 03, in the figures under `data/figures/`, and in the project report.
 
@@ -170,7 +173,7 @@ The full quantitative breakdown is in the final markdown cells of notebooks 02 a
 
 - **Window.** The analysis covers 1 April – 21 May 2026. Discussion after 21 May is not included.
 - **Language.** Sentiment, emotion and NER are computed on the English‑tagged sub‑corpus only (about 70 % of the texts). Portuguese, Spanish and French posts are described in aggregate but not analysed with their own pipelines.
-- **Community coverage.** Louvain communities are defined only on the 88 authors of the giant component. As a result, community-level content analysis covers about 110 English texts, while the majority of the corpus is analysed only at the global level.
+- **Community coverage.** Louvain communities are defined only on the 88 authors of the giant component. As a result, community-level content analysis covers about 111 English texts (≈ 2.6% of the English sub-corpus), while the majority of the corpus is analysed only at the global level.
 - **NER model.** `en_core_web_sm` is the small SpaCy model: it sometimes mislabels hashtags or short tokens (e.g. `ai`, `tucci`, `devilwearsprada2`) as locations. The errors do not affect the dominant ranks but should be acknowledged when reading individual entries of the entity tables.
 - **Promotional accounts.** A small number of accounts (e.g. `@ourmovieguide`) repost template content. They are flagged with `is_likely_promo` and kept in the network for transparency rather than silently filtered out.
 

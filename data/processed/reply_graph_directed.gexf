@@ -1,6 +1,6 @@
 <?xml version='1.0' encoding='utf-8'?>
 <gexf xmlns="http://www.gexf.net/1.2draft" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd" version="1.2">
-  <meta lastmodifieddate="2026-05-24">
+  <meta lastmodifieddate="2026-06-01">
     <creator>NetworkX 3.6.1</creator>
   </meta>
   <graph defaultedgetype="directed" mode="static" name="">
@@ -7870,13 +7870,13 @@
       <edge source="bpdreview.bsky.social" target="aisleseat.bsky.social" id="87" weight="2" />
       <edge source="aitchemcee283.bsky.social" target="biggreenbooks.bsky.social" id="88" weight="2" />
       <edge source="biggreenbooks.bsky.social" target="aitchemcee283.bsky.social" id="89" weight="1" />
-      <edge source="akelacooper.bsky.social" target="uncanny305.bandcamp.com" id="90" weight="3" />
+      <edge source="akelacooper.bsky.social" target="uncanny305.bandcamp.com" id="90" weight="2" />
       <edge source="uncanny305.bandcamp.com" target="akelacooper.bsky.social" id="91" weight="2" />
       <edge source="akoltchak.bsky.social" target="squeakyllama.bsky.social" id="92" weight="1" />
       <edge source="alangrofield.bsky.social" target="gravitysra1nbow.bsky.social" id="93" weight="1" />
       <edge source="albertoreale.bsky.social" target="hleehurley.com" id="94" weight="1" />
       <edge source="hleehurley.com" target="stephaniejane.bsky.social" id="95" weight="1" />
-      <edge source="maserrano.bsky.social" target="alertadetorrents.bsky.social" id="96" weight="3" />
+      <edge source="maserrano.bsky.social" target="alertadetorrents.bsky.social" id="96" weight="2" />
       <edge source="alexanderchee.bsky.social" target="mattielubchansky.com" id="97" weight="1" />
       <edge source="mattielubchansky.com" target="saramchenry.bsky.social" id="98" weight="2" />
       <edge source="mattielubchansky.com" target="violethour.bsky.social" id="99" weight="1" />
@@ -7941,7 +7941,7 @@
       <edge source="andreia-carbonari.bsky.social" target="porosensual.bsky.social" id="158" weight="1" />
       <edge source="andreia-carbonari.bsky.social" target="renatabsales.bsky.social" id="159" weight="1" />
       <edge source="porosensual.bsky.social" target="andreia-carbonari.bsky.social" id="160" weight="1" />
-      <edge source="renatabsales.bsky.social" target="andreia-carbonari.bsky.social" id="161" weight="3" />
+      <edge source="renatabsales.bsky.social" target="andreia-carbonari.bsky.social" id="161" weight="2" />
       <edge source="andrewbeaumen.bsky.social" target="popcrave.com" id="162" weight="1" />
       <edge source="andrewencer.bsky.social" target="johnmaddening.bsky.social" id="163" weight="2" />
       <edge source="johnmaddening.bsky.social" target="andrewencer.bsky.social" id="164" weight="2" />
@@ -8079,7 +8079,7 @@
       <edge source="behindthefrequency.bsky.social" target="joanofbarc.bsky.social" id="296" weight="1" />
       <edge source="bellabanana.bsky.social" target="apnews.com" id="297" weight="1" />
       <edge source="bellabanana.bsky.social" target="floridaman.bsky.social" id="298" weight="1" />
-      <edge source="floridaman.bsky.social" target="apnews.com" id="299" weight="2" />
+      <edge source="floridaman.bsky.social" target="apnews.com" id="299" weight="1" />
       <edge source="floridaman.bsky.social" target="bellabanana.bsky.social" id="300" weight="1" />
       <edge source="floridaman.bsky.social" target="rosemmalove.bsky.social" id="301" weight="1" />
       <edge source="floridaman.bsky.social" target="tinpottop.bsky.social" id="302" weight="1" />
@@ -8110,7 +8110,7 @@
       <edge source="bksman9.bsky.social" target="motoridersd.pug.ninja" id="327" weight="1" />
       <edge source="blackandgold.bsky.social" target="drewmagary.bsky.social" id="328" weight="1" />
       <edge source="mockwooloo.bsky.social" target="blackcatgarden.bsky.social" id="329" weight="2" />
-      <edge source="blackforestcyclist.bsky.social" target="cskwriter.bsky.social" id="330" weight="3" />
+      <edge source="blackforestcyclist.bsky.social" target="cskwriter.bsky.social" id="330" weight="2" />
       <edge source="cskwriter.bsky.social" target="blackforestcyclist.bsky.social" id="331" weight="2" />
       <edge source="blacksnakemo.bsky.social" target="gravitysra1nbow.bsky.social" id="332" weight="1" />
       <edge source="blake105.bsky.social" target="cesmustache.bsky.social" id="333" weight="1" />
@@ -8329,7 +8329,7 @@
       <edge source="crabbyaf.bsky.social" target="dbauer09.bsky.social" id="546" weight="1" />
       <edge source="crabbyaf.bsky.social" target="gravitysra1nbow.bsky.social" id="547" weight="1" />
       <edge source="dbauer09.bsky.social" target="crabbyaf.bsky.social" id="548" weight="1" />
-      <edge source="crabme.at" target="apnews.com" id="549" weight="2" />
+      <edge source="crabme.at" target="apnews.com" id="549" weight="1" />
       <edge source="crizvila.bsky.social" target="ladygaganow.net" id="550" weight="1" />
       <edge source="crowleyelworc.bsky.social" target="fdefantasmas.bsky.social" id="551" weight="1" />
       <edge source="fdefantasmas.bsky.social" target="crowleyelworc.bsky.social" id="552" weight="1" />
@@ -8341,7 +8341,7 @@
       <edge source="sydney-bauer.com" target="cuntleyjune.bsky.social" id="558" weight="1" />
       <edge source="currentlyquang.xyz" target="mgayultra.bsky.social" id="559" weight="1" />
       <edge source="cursedfrogurt.bsky.social" target="mattbr.bsky.social" id="560" weight="1" />
-      <edge source="d2kemps.bsky.social" target="tklv.bsky.social" id="561" weight="2" />
+      <edge source="d2kemps.bsky.social" target="tklv.bsky.social" id="561" weight="1" />
       <edge source="tklv.bsky.social" target="d2kemps.bsky.social" id="562" weight="1" />
       <edge source="daddysahole.bsky.social" target="vidalporter.bsky.social" id="563" weight="1" />
       <edge source="vidalporter.bsky.social" target="daddysahole.bsky.social" id="564" weight="1" />
@@ -8375,7 +8375,7 @@
       <edge source="dave9bikes.bsky.social" target="cassiarowland.bsky.social" id="592" weight="1" />
       <edge source="daveinlondon.bsky.social" target="cassiarowland.bsky.social" id="593" weight="1" />
       <edge source="davethetentakil.bsky.social" target="ernieluckman.bsky.social" id="594" weight="1" />
-      <edge source="ernieluckman.bsky.social" target="neverendingjim.bsky.social" id="595" weight="2" />
+      <edge source="ernieluckman.bsky.social" target="neverendingjim.bsky.social" id="595" weight="1" />
       <edge source="davewakeman.bsky.social" target="guvna.bsky.social" id="596" weight="1" />
       <edge source="daveypretension.bsky.social" target="tjamesdobbin.bsky.social" id="597" weight="1" />
       <edge source="daviddaniel.bsky.social" target="tomarmbruster.bsky.social" id="598" weight="1" />
@@ -8470,7 +8470,7 @@
       <edge source="edn-a.bsky.social" target="sleepinggiantsbr.bsky.social" id="687" weight="1" />
       <edge source="eenie22.swifties.social" target="reptvswifties.bsky.social" id="688" weight="1" />
       <edge source="eepybruh.bsky.social" target="ptklein.com" id="689" weight="1" />
-      <edge source="ehaid.bsky.social" target="shelleybwoke.bsky.social" id="690" weight="2" />
+      <edge source="ehaid.bsky.social" target="shelleybwoke.bsky.social" id="690" weight="1" />
       <edge source="ehs06702.blacksky.app" target="polly-o.bsky.social" id="691" weight="1" />
       <edge source="elainecrory.bsky.social" target="hleehurley.com" id="692" weight="1" />
       <edge source="eldritchmoon.love" target="millenniumasakura.bsky.social" id="693" weight="1" />
@@ -8777,7 +8777,7 @@
       <edge source="jimbpa.bsky.social" target="kikkiplanet.bsky.social" id="994" weight="1" />
       <edge source="jimmycraig42.bsky.social" target="squeakyllama.bsky.social" id="995" weight="1" />
       <edge source="jirachi.bsky.social" target="patrickwb95.bsky.social" id="996" weight="1" />
-      <edge source="patrickwb95.bsky.social" target="jirachi.bsky.social" id="997" weight="2" />
+      <edge source="patrickwb95.bsky.social" target="jirachi.bsky.social" id="997" weight="1" />
       <edge source="jjjuv.bsky.social" target="bttlborn.bsky.social" id="998" weight="1" />
       <edge source="spryoldlorax.bsky.social" target="jeninmotion.bsky.social" id="999" weight="1" />
       <edge source="spryoldlorax.bsky.social" target="jkfecke.bsky.social" id="1000" weight="1" />
@@ -8796,7 +8796,7 @@
       <edge source="jona-maz.bsky.social" target="nicetopatrick.bsky.social" id="1013" weight="1" />
       <edge source="jona-maz.bsky.social" target="upstating.bsky.social" id="1014" weight="1" />
       <edge source="jondvchbimble.bsky.social" target="samwell-slughorn.bsky.social" id="1015" weight="1" />
-      <edge source="samwell-slughorn.bsky.social" target="apnews.com" id="1016" weight="2" />
+      <edge source="samwell-slughorn.bsky.social" target="apnews.com" id="1016" weight="1" />
       <edge source="jonhendry.bsky.social" target="cassiarowland.bsky.social" id="1017" weight="1" />
       <edge source="jonjon85.bsky.social" target="puesyanimodo.bsky.social" id="1018" weight="3" />
       <edge source="puesyanimodo.bsky.social" target="jonjon85.bsky.social" id="1019" weight="3" />
@@ -9137,7 +9137,7 @@
       <edge source="thetrudz.photo" target="problematick.bsky.social" id="1354" weight="1" />
       <edge source="thetrudz.photo" target="shanavwhite.blacksky.app" id="1355" weight="1" />
       <edge source="profjpc.bsky.social" target="fleerultra.bsky.social" id="1356" weight="1" />
-      <edge source="profmikesell.bsky.social" target="rezekjoe.bsky.social" id="1357" weight="2" />
+      <edge source="profmikesell.bsky.social" target="rezekjoe.bsky.social" id="1357" weight="1" />
       <edge source="profsecchi.bsky.social" target="bedform.org" id="1358" weight="1" />
       <edge source="promptslinger.bsky.social" target="symbo1ics.bsky.social" id="1359" weight="1" />
       <edge source="pseudonymice.bsky.social" target="cassiarowland.bsky.social" id="1360" weight="1" />
@@ -9161,8 +9161,8 @@
       <edge source="realroffs.bsky.social" target="mauraquint.bsky.social" id="1378" weight="1" />
       <edge source="rebeccas09.bsky.social" target="cbbeauty2.bsky.social" id="1379" weight="1" />
       <edge source="rebelalliance77.bsky.social" target="sachacoward.bsky.social" id="1380" weight="1" />
-      <edge source="rebusly.com" target="contrariannews.org" id="1381" weight="2" />
-      <edge source="rebusly.com" target="popcrave.com" id="1382" weight="2" />
+      <edge source="rebusly.com" target="contrariannews.org" id="1381" weight="1" />
+      <edge source="rebusly.com" target="popcrave.com" id="1382" weight="1" />
       <edge source="redfellachris.bsky.social" target="anfieldkathy.bsky.social" id="1383" weight="1" />
       <edge source="redfort.bsky.social" target="maxxfergus.bsky.social" id="1384" weight="1" />
       <edge source="refrag.bsky.social" target="thecorlew.bsky.social" id="1385" weight="1" />
@@ -9321,7 +9321,7 @@
       <edge source="tinamur.bsky.social" target="silentbrouhaha.bsky.social" id="1538" weight="1" />
       <edge source="toad.city" target="aliafonzy.blacksky.app" id="1539" weight="1" />
       <edge source="tofuhama.bsky.social" target="squeakyllama.bsky.social" id="1540" weight="1" />
-      <edge source="tombtegtmeyer.bsky.social" target="jfruh.bsky.social" id="1541" weight="2" />
+      <edge source="tombtegtmeyer.bsky.social" target="jfruh.bsky.social" id="1541" weight="1" />
       <edge source="tone7x20.bsky.social" target="ricardoautobahn.co.uk" id="1542" weight="1" />
       <edge source="tootru.bsky.social" target="thrasherxy.bsky.social" id="1543" weight="1" />
       <edge source="traitor45.bsky.social" target="kikkiplanet.bsky.social" id="1544" weight="1" />
